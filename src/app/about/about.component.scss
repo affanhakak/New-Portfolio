@@ -1,0 +1,43 @@
+.articles {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .article-group {
+    background-image: url(../../assets/Images/about-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .article {
+        width: 25%;
+        height: 90vh;
+        border: 1px solid;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+        background-color: #adb5bd;
+        .heading {
+          display: flex;
+          justify-content: center;
+          color: #2b2d42;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #1d1c24;
+          margin: 5px;
+        }
+      }
+      .article:hover {
+        background-color: cornflowerblue;
+        transition: 1s;
+      }
+    }
+  }
+}
